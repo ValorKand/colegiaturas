@@ -11,7 +11,7 @@ import SwiftUI
 struct colegiaturasApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }

@@ -83,8 +83,6 @@ struct ContentView: View {
                         .disabled(desactivado)
                         .focused($enfocado)
                 }
-                Text(guardandoLabel)
-                    .opacity(ocultar ? 0 : 1)
             }
             if Contenedor == 3 {
                 //Contenedor para ciclo escolar
@@ -95,8 +93,6 @@ struct ContentView: View {
                     .frame(width: 200)
                     .disabled(desactivado)
                     .focused($enfocado)
-                Text(guardandoLabel)
-                    .opacity(ocultar ? 0 : 1)
             } else if Contenedor == 5 {
                 VStack {
                     //Contenedor para seleccionar niveles educativos
@@ -121,8 +117,6 @@ struct ContentView: View {
                         .toggleStyle(.checkbox)
                     }
                     .focused($enfocado)
-                    Text(guardandoLabel)
-                        .opacity(ocultar ? 0 : 1)
                 }
             } else if Contenedor == 7 {
                 //Contenedor para configurar tarifas
@@ -198,7 +192,8 @@ struct ContentView: View {
                     }
                 }
             }
-            
+            Text(guardandoLabel)
+                .opacity(ocultar ? 0 : 1)
             Button(action: {self.actualizaLabel()}) {
                 Label("Siguiente", systemImage: "arrow.right")
             }
@@ -294,6 +289,7 @@ struct ContentView: View {
             ocultar=true
             textoLabel=textos[4]
         case 10:
+            desactivado=true
             ocultar=false
             guardandoLabel="Bien, ya hemos guardado tus montos"+inscripcionCostoPreescolar+colegiaturaCostoPreescolar+inscripcionCostoPrimaria+colegiaturaCostoPrimaria+inscripcionCostoSecundaria+colegiaturaCostoSecundaria+inscripcionCostoBachillerato+colegiaturaCostoBachillerato
         default:

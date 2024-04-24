@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571744352BD6B1E900C59D93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571744342BD6B1E900C59D93 /* LoginView.swift */; };
+		571744392BD6B73000C59D93 /* PostgresClientKit in Frameworks */ = {isa = PBXBuildFile; productRef = 571744382BD6B73000C59D93 /* PostgresClientKit */; };
+		5717443B2BD6D3F600C59D93 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717443A2BD6D3F600C59D93 /* SplashView.swift */; };
 		578BEF2C2BD1CA3E00D2A25B /* colegiaturasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BEF2B2BD1CA3E00D2A25B /* colegiaturasApp.swift */; };
 		578BEF2E2BD1CA3E00D2A25B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BEF2D2BD1CA3E00D2A25B /* ContentView.swift */; };
 		578BEF302BD1CA4100D2A25B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578BEF2F2BD1CA4100D2A25B /* Assets.xcassets */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		571744342BD6B1E900C59D93 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5717443A2BD6D3F600C59D93 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		578BEF282BD1CA3E00D2A25B /* colegiaturas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colegiaturas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578BEF2B2BD1CA3E00D2A25B /* colegiaturasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colegiaturasApp.swift; sourceTree = "<group>"; };
 		578BEF2D2BD1CA3E00D2A25B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571744392BD6B73000C59D93 /* PostgresClientKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				578BEF2B2BD1CA3E00D2A25B /* colegiaturasApp.swift */,
+				5717443A2BD6D3F600C59D93 /* SplashView.swift */,
+				571744342BD6B1E900C59D93 /* LoginView.swift */,
 				578BEF2D2BD1CA3E00D2A25B /* ContentView.swift */,
 				578BEF2F2BD1CA4100D2A25B /* Assets.xcassets */,
 				578BEF312BD1CA4100D2A25B /* colegiaturas.entitlements */,
@@ -145,6 +153,9 @@
 			dependencies = (
 			);
 			name = colegiaturas;
+			packageProductDependencies = (
+				571744382BD6B73000C59D93 /* PostgresClientKit */,
+			);
 			productName = colegiaturas;
 			productReference = 578BEF282BD1CA3E00D2A25B /* colegiaturas.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 578BEF1F2BD1CA3E00D2A25B;
+			packageReferences = (
+				571744372BD6B73000C59D93 /* XCRemoteSwiftPackageReference "PostgresClientKit" */,
+			);
 			productRefGroup = 578BEF292BD1CA3E00D2A25B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				578BEF2E2BD1CA3E00D2A25B /* ContentView.swift in Sources */,
+				5717443B2BD6D3F600C59D93 /* SplashView.swift in Sources */,
+				571744352BD6B1E900C59D93 /* LoginView.swift in Sources */,
 				578BEF2C2BD1CA3E00D2A25B /* colegiaturasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +633,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		571744372BD6B73000C59D93 /* XCRemoteSwiftPackageReference "PostgresClientKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/codewinsdotcom/PostgresClientKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		571744382BD6B73000C59D93 /* PostgresClientKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 571744372BD6B73000C59D93 /* XCRemoteSwiftPackageReference "PostgresClientKit" */;
+			productName = PostgresClientKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 578BEF202BD1CA3E00D2A25B /* Project object */;
 }
