@@ -1,4 +1,4 @@
-# colegiaturas
+# CTRL + ESC Colegiaturas
 Sistema de colegituras CTRL + ESC
 
 Sistema para la administración de colegiaturas hecho en Swift, será multiplataforma, instalable en Linux, macOS y Windows.
