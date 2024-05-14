@@ -2,6 +2,7 @@
 Sistema de colegituras CTRL + ESC
 
 Sistema para la administración de colegiaturas hecho en Swift, será multiplataforma, instalable en Linux, macOS y Windows.
+Utilizaremos la librería gráfica GTK para su compatibilidad con todos los sistemas operativos.
 Permite administrar el pago de la matrícula de alumnos ya inscritos e inscribir elementos nuevos.
 Permite organizar y filtrar los alumnos por situación de pago, moroso, etc.
 Fácil de usar, interáz intuitiva que requiere poca o nula capacitación.
